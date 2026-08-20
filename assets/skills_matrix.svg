@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 390" width="100%" height="100%">
+  <defs>
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C16" />
+      <stop offset="50%" stop-color="#0E1428" />
+      <stop offset="100%" stop-color="#04070F" />
+    </linearGradient>
+
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes blockFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    .cat-title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 700; fill: #00F0FF; font-size: 13px; letter-spacing: 1.5px; }
+    .skill-pill { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12px; font-weight: 600; }
+    .main-title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 800; fill: #FFFFFF; font-size: 16px; letter-spacing: 2px; }
+
+    .block-3d { animation: blockFloat 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="850" height="390" rx="14" fill="url(#panelBg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="850" height="390" rx="14" fill="none" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.25" filter="url(#glow)" />
+
+  <!-- Section Header -->
+  <g transform="translate(30, 25)">
+    <circle cx="6" cy="6" r="4" fill="#00F0FF" filter="url(#glow)" />
+    <text x="20" y="10" class="main-title">AI LABORATORY STACK // TECHNICAL CAPABILITIES</text>
+    <line x1="0" y1="22" x2="790" y2="22" stroke="#1E293B" stroke-width="1" />
+    <line x1="0" y1="22" x2="260" y2="22" stroke="url(#cyanBlue)" stroke-width="2" filter="url(#glow)" />
+  </g>
+
+  <!-- COLUMN 1 -->
+  <g transform="translate(30, 70)">
+    
+    <!-- 1. AI / ML -->
+    <g transform="translate(0, 0)" class="block-3d">
+      <rect width="380" height="65" rx="8" fill="#0B132B" stroke="#8B5CF6" stroke-width="1.2" />
+      <text x="15" y="22" class="cat-title" fill="#C084FC">AI &amp; MACHINE LEARNING</text>
+      
+      <g transform="translate(15, 32)">
+        <rect x="0" y="0" width="40" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="10" y="15" class="skill-pill" fill="#E9D5FF">ML</text>
+
+        <rect x="48" y="0" width="40" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="58" y="15" class="skill-pill" fill="#E9D5FF">DL</text>
+
+        <rect x="96" y="0" width="115" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="104" y="15" class="skill-pill" fill="#E9D5FF">Computer Vision</text>
+      </g>
+    </g>
+
+    <!-- 2. Programming Languages -->
+    <g transform="translate(0, 80)" class="block-3d" style="animation-delay: 0.5s;">
+      <rect width="380" height="65" rx="8" fill="#0B132B" stroke="#00F0FF" stroke-width="1.2" />
+      <text x="15" y="22" class="cat-title">PROGRAMMING LANGUAGES</text>
+      
+      <g transform="translate(15, 32)">
+        <rect x="0" y="0" width="70" height="22" rx="4" fill="#0F2942" stroke="#00F0FF" stroke-width="0.6" />
+        <text x="12" y="15" class="skill-pill" fill="#38BDF8">Python</text>
+
+        <rect x="78" y="0" width="130" height="22" rx="4" fill="#0F2942" stroke="#00F0FF" stroke-width="0.6" />
+        <text x="86" y="15" class="skill-pill" fill="#38BDF8">Java (Fundamentals)</text>
+      </g>
+    </g>
+
+    <!-- 3. Frameworks & Data Science -->
+    <g transform="translate(0, 160)" class="block-3d" style="animation-delay: 1s;">
+      <rect width="380" height="75" rx="8" fill="#0B132B" stroke="#38BDF8" stroke-width="1.2" />
+      <text x="15" y="22" class="cat-title" fill="#38BDF8">TOOLS &amp; FRAMEWORKS</text>
+      
+      <g transform="translate(15, 32)">
+        <rect x="0" y="0" width="60" height="22" rx="4" fill="#06202A" stroke="#38BDF8" stroke-width="0.6" />
+        <text x="8" y="15" class="skill-pill" fill="#7DD3FC">NumPy</text>
+
+        <rect x="68" y="0" width="60" height="22" rx="4" fill="#06202A" stroke="#38BDF8" stroke-width="0.6" />
+        <text x="76" y="15" class="skill-pill" fill="#7DD3FC">Pandas</text>
+
+        <rect x="136" y="0" width="80" height="22" rx="4" fill="#06202A" stroke="#38BDF8" stroke-width="0.6" />
+        <text x="144" y="15" class="skill-pill" fill="#7DD3FC">Scikit-learn</text>
+
+        <rect x="224" y="0" width="85" height="22" rx="4" fill="#06202A" stroke="#38BDF8" stroke-width="0.6" />
+        <text x="232" y="15" class="skill-pill" fill="#7DD3FC">TensorFlow</text>
+
+        <rect x="0" y="27" width="65" height="22" rx="4" fill="#06202A" stroke="#38BDF8" stroke-width="0.6" />
+        <text x="8" y="42" class="skill-pill" fill="#7DD3FC">OpenCV</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- COLUMN 2 -->
+  <g transform="translate(440, 70)">
+
+    <!-- 4. Web Development -->
+    <g transform="translate(0, 0)" class="block-3d" style="animation-delay: 0.25s;">
+      <rect width="380" height="75" rx="8" fill="#0B132B" stroke="#00F0FF" stroke-width="1.2" />
+      <text x="15" y="22" class="cat-title">WEB DEVELOPMENT</text>
+      
+      <g transform="translate(15, 32)">
+        <rect x="0" y="0" width="50" height="22" rx="4" fill="#0F2942" stroke="#00F0FF" stroke-width="0.6" />
+        <text x="8" y="15" class="skill-pill" fill="#38BDF8">HTML</text>
+
+        <rect x="56" y="0" width="45" height="22" rx="4" fill="#0F2942" stroke="#00F0FF" stroke-width="0.6" />
+        <text x="64" y="15" class="skill-pill" fill="#38BDF8">CSS</text>
+
+        <rect x="107" y="0" width="80" height="22" rx="4" fill="#0F2942" stroke="#00F0FF" stroke-width="0.6" />
+        <text x="115" y="15" class="skill-pill" fill="#38BDF8">JavaScript</text>
+
+        <rect x="193" y="0" width="65" height="22" rx="4" fill="#0F2942" stroke="#00F0FF" stroke-width="0.6" />
+        <text x="201" y="15" class="skill-pill" fill="#38BDF8">Node.js</text>
+
+        <rect x="0" y="27" width="60" height="22" rx="4" fill="#0F2942" stroke="#00F0FF" stroke-width="0.6" />
+        <text x="8" y="42" class="skill-pill" fill="#38BDF8">Django</text>
+
+        <rect x="66" y="27" width="60" height="22" rx="4" fill="#0F2942" stroke="#00F0FF" stroke-width="0.6" />
+        <text x="74" y="42" class="skill-pill" fill="#38BDF8">FastAPI</text>
+      </g>
+    </g>
+
+    <!-- 5. Core Computer Science -->
+    <g transform="translate(0, 85)" class="block-3d" style="animation-delay: 0.75s;">
+      <rect width="380" height="65" rx="8" fill="#0B132B" stroke="#38BDF8" stroke-width="1.2" />
+      <text x="15" y="22" class="cat-title" fill="#38BDF8">CORE CONCEPTS &amp; DATABASE</text>
+      
+      <g transform="translate(15, 32)">
+        <rect x="0" y="0" width="105" height="22" rx="4" fill="#06202A" stroke="#38BDF8" stroke-width="0.6" />
+        <text x="8" y="15" class="skill-pill" fill="#7DD3FC">Data Structures</text>
+
+        <rect x="113" y="0" width="45" height="22" rx="4" fill="#06202A" stroke="#38BDF8" stroke-width="0.6" />
+        <text x="121" y="15" class="skill-pill" fill="#7DD3FC">OOP</text>
+
+        <rect x="166" y="0" width="105" height="22" rx="4" fill="#06202A" stroke="#38BDF8" stroke-width="0.6" />
+        <text x="174" y="15" class="skill-pill" fill="#7DD3FC">SQL / Database</text>
+      </g>
+    </g>
+
+    <!-- 6. Developer Tools -->
+    <g transform="translate(0, 160)" class="block-3d" style="animation-delay: 1.25s;">
+      <rect width="380" height="75" rx="8" fill="#0B132B" stroke="#8B5CF6" stroke-width="1.2" />
+      <text x="15" y="22" class="cat-title" fill="#C084FC">DEVELOPER TOOLS</text>
+      
+      <g transform="translate(15, 32)">
+        <rect x="0" y="0" width="40" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="8" y="15" class="skill-pill" fill="#E9D5FF">Git</text>
+
+        <rect x="48" y="0" width="60" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="56" y="15" class="skill-pill" fill="#E9D5FF">GitHub</text>
+
+        <rect x="114" y="0" width="65" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="122" y="15" class="skill-pill" fill="#E9D5FF">VS Code</text>
+
+        <rect x="185" y="0" width="95" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="193" y="15" class="skill-pill" fill="#E9D5FF">Google Colab</text>
+      </g>
+    </g>
+  </g>
+</svg>

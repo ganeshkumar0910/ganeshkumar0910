@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="100%" height="100%">
+  <defs>
+    <!-- Dark Panel Background -->
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040712" />
+      <stop offset="50%" stop-color="#091024" />
+      <stop offset="100%" stop-color="#030510" />
+    </linearGradient>
+
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="ultraGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes lineFlowDash {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .main-title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 900; fill: #FFFFFF; font-size: 15px; letter-spacing: 2px; }
+    .node-title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 800; font-size: 12.5px; fill: #00F0FF; }
+    .node-desc { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11.5px; fill: #94A3B8; }
+    .dash-line { stroke-dasharray: 8 4; animation: lineFlowDash 3s linear infinite; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="850" height="280" rx="14" fill="url(#panelBg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="850" height="280" rx="14" fill="none" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.3" filter="url(#ultraGlow)" />
+
+  <!-- Section Header -->
+  <g transform="translate(30, 25)">
+    <circle cx="6" cy="6" r="4.5" fill="#00F0FF" filter="url(#ultraGlow)" />
+    <text x="20" y="10" class="main-title">🧬 SELF-BUILDING NEURAL PIPELINE ARCHITECTURE</text>
+    <line x1="0" y1="22" x2="790" y2="22" stroke="#1E293B" stroke-width="1" />
+    <line x1="0" y1="22" x2="350" y2="22" stroke="url(#cyanBlue)" stroke-width="2.5" filter="url(#ultraGlow)" />
+  </g>
+
+  <!-- PIPELINE CONNECTIONS & NODES -->
+  <g transform="translate(30, 75)">
+    <!-- Laser Flow Lines between Nodes -->
+    <path d="M 230 70 L 280 70" stroke="url(#cyanBlue)" stroke-width="2.5" class="dash-line" filter="url(#ultraGlow)" />
+    <path d="M 510 70 L 560 70" stroke="url(#purpleGrad)" stroke-width="2.5" class="dash-line" filter="url(#ultraGlow)" />
+
+    <!-- STAGE 1: CORE FOUNDATIONS -->
+    <g transform="translate(0, 0)">
+      <rect width="230" height="155" rx="10" fill="#0B1224" stroke="#00F0FF" stroke-width="1.2" />
+      <rect x="0" y="0" width="230" height="30" rx="10" fill="#0F2942" />
+      <rect x="0" y="20" width="230" height="10" fill="#0F2942" />
+      
+      <circle cx="18" cy="15" r="4" fill="#00F0FF" filter="url(#ultraGlow)" />
+      <text x="30" y="20" class="node-title">1. CORE FOUNDATIONS</text>
+
+      <text x="15" y="55" class="node-desc">• Python, Java (Fundamentals)</text>
+      <text x="15" y="78" class="node-desc">• Data Structures &amp; Algorithms</text>
+      <text x="15" y="101" class="node-desc">• OOP &amp; Problem Solving</text>
+      <text x="15" y="124" class="node-desc">• SQL &amp; Database Management</text>
+    </g>
+
+    <!-- STAGE 2: AI & ML PROCESSING ENGINES -->
+    <g transform="translate(280, 0)">
+      <rect width="230" height="155" rx="10" fill="#0F122B" stroke="#8B5CF6" stroke-width="1.2" />
+      <rect x="0" y="0" width="230" height="30" rx="10" fill="#1E1B4B" />
+      <rect x="0" y="20" width="230" height="10" fill="#1E1B4B" />
+      
+      <circle cx="18" cy="15" r="4" fill="#8B5CF6" filter="url(#ultraGlow)" />
+      <text x="30" y="20" class="node-title" fill="#C084FC">2. AI / ML / CV ENGINES</text>
+
+      <text x="15" y="55" class="node-desc">• Deep Learning &amp; LSTM Models</text>
+      <text x="15" y="78" class="node-desc">• Computer Vision &amp; OpenCV</text>
+      <text x="15" y="101" class="node-desc">• OCR &amp; Diffusion Style Transfer</text>
+      <text x="15" y="124" class="node-desc">• TensorFlow, Pandas, Scikit-learn</text>
+    </g>
+
+    <!-- STAGE 3: FULLSTACK DEPLOYMENT -->
+    <g transform="translate(560, 0)">
+      <rect width="230" height="155" rx="10" fill="#061A24" stroke="#06B6D4" stroke-width="1.2" />
+      <rect x="0" y="0" width="230" height="30" rx="10" fill="#06202A" />
+      <rect x="0" y="20" width="230" height="10" fill="#06202A" />
+      
+      <circle cx="18" cy="15" r="4" fill="#06B6D4" filter="url(#ultraGlow)" />
+      <text x="30" y="20" class="node-title" fill="#22D3EE">3. DEPLOYMENT</text>
+
+      <text x="15" y="55" class="node-desc">• Streamlit Predictive Web Apps</text>
+      <text x="15" y="78" class="node-desc">• Flask, Django, FastAPI</text>
+      <text x="15" y="101" class="node-desc">• Groq NLP &amp; Telegram Bots</text>
+      <text x="15" y="124" class="node-desc">• AWS Cloud &amp; Git Workflows</text>
+    </g>
+  </g>
+</svg>

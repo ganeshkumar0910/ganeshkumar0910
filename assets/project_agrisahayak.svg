@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060E18" />
+      <stop offset="50%" stop-color="#0B182B" />
+      <stop offset="100%" stop-color="#040A12" />
+    </linearGradient>
+
+    <linearGradient id="cyanGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <filter id="ultraGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes langPulse {
+      0%, 100% { fill: #10B981; filter: drop-shadow(0 0 4px #10B981); }
+      50% { fill: #00F0FF; filter: drop-shadow(0 0 10px #00F0FF); }
+    }
+
+    .proj-title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 900; fill: #10B981; font-size: 16px; letter-spacing: 1px; }
+    .subtitle { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 600; fill: #E2E8F0; font-size: 13px; }
+    .bullet-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12px; fill: #94A3B8; line-height: 1.5; }
+    .tech-pill { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; font-weight: 600; fill: #A7F3D0; }
+    .status-badge { font-family: 'Courier New', monospace; font-size: 11px; font-weight: 700; fill: #10B981; }
+
+    .l-pulse { animation: langPulse 2.5s infinite ease-in-out; }
+  </style>
+
+  <!-- 3D Shadow Layer -->
+  <rect x="4" y="4" width="842" height="232" rx="14" fill="#000000" opacity="0.6" />
+
+  <!-- Main Container -->
+  <rect width="842" height="232" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="842" height="232" rx="14" fill="none" stroke="#10B981" stroke-width="1" stroke-opacity="0.35" filter="url(#ultraGlow)" />
+  
+  <!-- Left Accent Bar -->
+  <rect x="0" y="0" width="5" height="232" rx="2" fill="url(#cyanGreen)" filter="url(#ultraGlow)" />
+
+  <!-- 6-LANGUAGE TELEGRAM NLP INTERFACE (RIGHT VISUAL) -->
+  <g transform="translate(605, 25)">
+    <rect width="215" height="182" rx="8" fill="#091424" stroke="#10B981" stroke-width="1" stroke-dasharray="4 2" />
+    <text x="15" y="22" font-family="monospace" font-size="10" fill="#10B981" font-weight="700">6-LANG TRANSLATION PIPELINE</text>
+    
+    <!-- 6 Language Badges -->
+    <g transform="translate(15, 32)">
+      <rect x="0" y="0" width="55" height="20" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+      <text x="10" y="14" font-family="sans-serif" font-size="10" font-weight="600" fill="#A7F3D0">English</text>
+
+      <rect x="63" y="0" width="55" height="20" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+      <text x="12" y="14" font-family="sans-serif" font-size="10" font-weight="600" fill="#A7F3D0">తెలుగు</text>
+
+      <rect x="126" y="0" width="55" height="20" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+      <text x="14" y="14" font-family="sans-serif" font-size="10" font-weight="600" fill="#A7F3D0">हिन्दी</text>
+
+      <rect x="0" y="28" width="55" height="20" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+      <text x="12" y="42" font-family="sans-serif" font-size="10" font-weight="600" fill="#A7F3D0">தமிழ்</text>
+
+      <rect x="63" y="28" width="55" height="20" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+      <text x="10" y="42" font-family="sans-serif" font-size="10" font-weight="600" fill="#A7F3D0">ಕನ್ನಡ</text>
+
+      <rect x="126" y="28" width="55" height="20" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+      <text x="8" y="42" font-family="sans-serif" font-size="10" font-weight="600" fill="#A7F3D0">മലയാളം</text>
+    </g>
+
+    <!-- Real-time APIs Indicator -->
+    <g transform="translate(15, 100)">
+      <rect width="185" height="66" rx="6" fill="#042F2E" stroke="#10B981" stroke-width="0.8" />
+      <text x="12" y="22" font-family="monospace" font-size="9.5" font-weight="700" fill="#34D399">GROQ LLM: INFERENCE ⚡</text>
+      <text x="12" y="42" font-family="monospace" font-size="9.5" font-weight="700" fill="#38BDF8">OPENWEATHER: LIVE 🌦️</text>
+    </g>
+  </g>
+
+  <!-- LEFT CONTENT -->
+  <g transform="translate(30, 22)">
+    <!-- Top Header -->
+    <g transform="translate(0, 0)">
+      <circle cx="6" cy="6" r="4.5" fill="#10B981" class="l-pulse" filter="url(#ultraGlow)" />
+      <text x="20" y="10" class="proj-title">AgriSahayak</text>
+      <text x="130" y="10" class="subtitle">— AI-Based Multilingual Telegram Farming Assistant</text>
+
+      <!-- Badge Tag -->
+      <rect x="560" y="-5" width="225" height="26" rx="13" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+      <text x="572" y="12" class="status-badge" fill="#A7F3D0">6 LANGUAGES // GROQ API // TELEGRAM</text>
+    </g>
+
+    <!-- Glowing Separator -->
+    <line x1="0" y1="24" x2="560" y2="24" stroke="#1E293B" stroke-width="1" />
+    <line x1="0" y1="24" x2="250" y2="24" stroke="url(#cyanGreen)" stroke-width="2.5" filter="url(#ultraGlow)" />
+
+    <!-- Project Description Bullets matching resume -->
+    <text x="0" y="52" class="bullet-text">
+      • Developed a multilingual Telegram chatbot supporting 6 languages, using Node.js and the Telegram Bot API to provide
+    </text>
+    <text x="12" y="70" class="bullet-text">
+      agriculture-related guidance through an interactive chat interface.
+    </text>
+
+    <text x="0" y="96" class="bullet-text">
+      • Integrated the Groq API for AI-powered responses and the OpenWeather API for real-time location-based weather updates,
+    </text>
+    <text x="12" y="114" class="bullet-text">
+      helping farmers make informed decisions.
+    </text>
+
+    <!-- Technologies Row -->
+    <g transform="translate(0, 155)">
+      <text x="0" y="15" font-family="monospace" font-size="11" fill="#64748B">TECHNOLOGIES:</text>
+      
+      <g transform="translate(100, 0)">
+        <rect x="0" y="0" width="65" height="22" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+        <text x="8" y="15" class="tech-pill">Node.js</text>
+
+        <rect x="73" y="0" width="115" height="22" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+        <text x="81" y="15" class="tech-pill">Telegram Bot API</text>
+
+        <rect x="196" y="0" width="75" height="22" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+        <text x="204" y="15" class="tech-pill">Groq API</text>
+
+        <rect x="279" y="0" width="110" height="22" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.6" />
+        <text x="287" y="15" class="tech-pill">OpenWeather API</text>
+      </g>
+    </g>
+  </g>
+</svg>

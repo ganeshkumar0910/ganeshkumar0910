@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 560" width="100%" height="100%">
+  <defs>
+    <!-- Dark Gravity Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030611" />
+      <stop offset="50%" stop-color="#091024" />
+      <stop offset="100%" stop-color="#040714" />
+    </linearGradient>
+
+    <!-- Core Radial Glow -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="1" />
+      <stop offset="40%" stop-color="#8B5CF6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+
+    <filter id="ultraGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="12" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Define Elliptical Motion Paths -->
+    <!-- Orbit 1 Path -->
+    <path id="pathOrbit1" d="M 425,120 A 250,100 0 1,1 424.9,120 Z" />
+    <!-- Orbit 2 Path -->
+    <path id="pathOrbit2" d="M 425,80 A 330,140 0 1,1 424.9,80 Z" />
+    <!-- Orbit 3 Path -->
+    <path id="pathOrbit3" d="M 425,40 A 400,180 0 1,1 424.9,40 Z" />
+  </defs>
+
+  <style>
+    @keyframes corePulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 10px #00F0FF); }
+      50% { transform: scale(1.25); filter: drop-shadow(0 0 24px #00F0FF); }
+    }
+    @keyframes orbitLineGlow {
+      0%, 100% { stroke-opacity: 0.3; }
+      50% { stroke-opacity: 0.8; stroke: #00F0FF; }
+    }
+    @keyframes connectorBlink {
+      0%, 100% { stroke-opacity: 0; }
+      50% { stroke-opacity: 0.8; }
+    }
+
+    .main-title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 900; fill: #FFFFFF; font-size: 16px; letter-spacing: 2px; }
+    .core-title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 900; fill: #FFFFFF; font-size: 13px; letter-spacing: 1.5px; }
+    .node-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; font-weight: 700; fill: #00F0FF; }
+
+    .ai-core { animation: corePulse 3s ease-in-out infinite; transform-origin: 425px 220px; }
+    .orbit-path { stroke: #1E293B; stroke-dasharray: 6 4; animation: orbitLineGlow 5s ease-in-out infinite; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="850" height="560" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- Section Header -->
+  <g transform="translate(30, 25)">
+    <circle cx="6" cy="6" r="4.5" fill="#00F0FF" filter="url(#ultraGlow)" />
+    <text x="20" y="10" class="main-title">🪐 PROJECT GRAVITY SYSTEM // ORBITAL RESEARCH CORE</text>
+    <line x1="0" y1="22" x2="790" y2="22" stroke="#1E293B" stroke-width="1" />
+    <line x1="0" y1="22" x2="380" y2="22" stroke="url(#cyanBlue)" stroke-width="2.5" filter="url(#ultraGlow)" />
+  </g>
+
+  <!-- 🪐 GRAVITATIONAL ORBITAL SYSTEM VISUAL (CENTERED AT 425, 220) -->
+  <g transform="translate(0, 20)">
+    <!-- Elliptical Orbit 1 (Inner) -->
+    <use href="#pathOrbit1" fill="none" stroke="#334155" stroke-width="1.5" class="orbit-path" />
+    
+    <!-- Elliptical Orbit 2 (Middle) -->
+    <use href="#pathOrbit2" fill="none" stroke="#334155" stroke-width="1.5" class="orbit-path" style="animation-delay: 1.5s;" />
+
+    <!-- Elliptical Orbit 3 (Outer) -->
+    <use href="#pathOrbit3" fill="none" stroke="#334155" stroke-width="1.5" class="orbit-path" style="animation-delay: 3s;" />
+
+    <!-- Central AI CORE Node -->
+    <g class="ai-core">
+      <circle cx="425" cy="220" r="38" fill="url(#coreGlow)" opacity="0.6" />
+      <circle cx="425" cy="220" r="22" fill="#0B1224" stroke="#00F0FF" stroke-width="2" />
+      <circle cx="425" cy="220" r="10" fill="#00F0FF" filter="url(#ultraGlow)" />
+      <text x="425" y="224" text-anchor="middle" class="core-title" filter="url(#ultraGlow)">AI CORE</text>
+    </g>
+
+    <!-- Inter-Node Temporary Laser Connections (Illuminating when paths approach) -->
+    <line x1="425" y1="220" x2="250" y2="150" stroke="#00F0FF" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 4" style="animation: connectorBlink 4s ease-in-out infinite;" />
+    <line x1="425" y1="220" x2="600" y2="280" stroke="#8B5CF6" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 4" style="animation: connectorBlink 4s ease-in-out infinite 2s;" />
+
+    <!-- ORBITING PROJECT NODE 1: Multi-Horizon Power Consumption Forecasting -->
+    <g>
+      <path d="M 0 0">
+        <animateMotion dur="12s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#pathOrbit1" />
+        </animateMotion>
+      </path>
+      <!-- Node Content -->
+      <g filter="url(#ultraGlow)">
+        <circle cx="0" cy="0" r="14" fill="#0B172A" stroke="#00F0FF" stroke-width="2" />
+        <circle cx="0" cy="0" r="6" fill="#00F0FF" />
+        <rect x="20" y="-12" width="220" height="24" rx="12" fill="#06202A" stroke="#00F0FF" stroke-width="1" />
+        <text x="30" y="4" class="node-text">⚡ Power Forecast (LSTM)</text>
+      </g>
+    </g>
+
+    <!-- ORBITING PROJECT NODE 2: Smart Parking Slot Finder -->
+    <g>
+      <path d="M 0 0">
+        <animateMotion dur="18s" repeatCount="indefinite" rotate="auto" begin="-6s">
+          <mpath href="#pathOrbit2" />
+        </animateMotion>
+      </path>
+      <!-- Node Content -->
+      <g filter="url(#ultraGlow)">
+        <circle cx="0" cy="0" r="14" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="2" />
+        <circle cx="0" cy="0" r="6" fill="#8B5CF6" />
+        <rect x="20" y="-12" width="210" height="24" rx="12" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="1" />
+        <text x="30" y="4" class="node-text" fill="#C084FC">🅿️ Smart Parking (Flask)</text>
+      </g>
+    </g>
+
+    <!-- ORBITING PROJECT NODE 3: AgriSahayak Multilingual Assistant -->
+    <g>
+      <path d="M 0 0">
+        <animateMotion dur="24s" repeatCount="indefinite" rotate="auto" begin="-12s">
+          <mpath href="#pathOrbit3" />
+        </animateMotion>
+      </path>
+      <!-- Node Content -->
+      <g filter="url(#ultraGlow)">
+        <circle cx="0" cy="0" r="14" fill="#064E3B" stroke="#10B981" stroke-width="2" />
+        <circle cx="0" cy="0" r="6" fill="#10B981" />
+        <rect x="20" y="-12" width="220" height="24" rx="12" fill="#042F2E" stroke="#10B981" stroke-width="1" />
+        <text x="30" y="4" class="node-text" fill="#A7F3D0">🌾 AgriSahayak (6-Lang NLP)</text>
+      </g>
+    </g>
+
+    <!-- Orbiting Tiny Data Particles -->
+    <circle cx="0" cy="0" r="3" fill="#00F0FF" filter="url(#ultraGlow)">
+      <animateMotion dur="6s" repeatCount="indefinite">
+        <mpath href="#pathOrbit1" />
+      </animateMotion>
+    </circle>
+    <circle cx="0" cy="0" r="3" fill="#8B5CF6" filter="url(#ultraGlow)">
+      <animateMotion dur="9s" repeatCount="indefinite">
+        <mpath href="#pathOrbit2" />
+      </animateMotion>
+    </circle>
+    <circle cx="0" cy="0" r="3" fill="#10B981" filter="url(#ultraGlow)">
+      <animateMotion dur="12s" repeatCount="indefinite">
+        <mpath href="#pathOrbit3" />
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- BOTTOM PROJECT MODULE HUD SPECIFICATIONS -->
+  <g transform="translate(30, 430)">
+    <rect width="790" height="110" rx="10" fill="#0B1020" stroke="#1E293B" stroke-width="1" />
+    
+    <text x="20" y="24" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="13" fill="#00F0FF">
+      ORBITING SYSTEM NODES SUMMARY (DIRECT REPOSITORY LINKS):
+    </text>
+    
+    <text x="20" y="48" font-family="'Segoe UI', sans-serif" font-size="12" fill="#CBD5E1">
+      • Node 1: <tspan font-weight="700" fill="#38BDF8">Multi-Horizon Power Consumption Forecasting</tspan> (Python, LSTM, Streamlit, TensorFlow)
+    </text>
+
+    <text x="20" y="70" font-family="'Segoe UI', sans-serif" font-size="12" fill="#CBD5E1">
+      • Node 2: <tspan font-weight="700" fill="#C084FC">Smart Parking Slot Finder</tspan> (Flask, SQLite, Real-Time Slot Reservation, Payment Management)
+    </text>
+
+    <text x="20" y="92" font-family="'Segoe UI', sans-serif" font-size="12" fill="#CBD5E1">
+      • Node 3: <tspan font-weight="700" fill="#A7F3D0">AgriSahayak</tspan> (6-Language Multilingual Telegram Bot, Groq API, OpenWeather API)
+    </text>
+  </g>
+</svg>

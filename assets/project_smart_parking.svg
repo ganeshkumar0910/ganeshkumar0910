@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B18" />
+      <stop offset="50%" stop-color="#0E122A" />
+      <stop offset="100%" stop-color="#04060F" />
+    </linearGradient>
+
+    <linearGradient id="violetGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+
+    <filter id="ultraGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes slotBlink1 {
+      0%, 100% { fill: #00F0FF; opacity: 1; filter: drop-shadow(0 0 8px #00F0FF); }
+      50% { fill: #22C55E; opacity: 0.6; }
+    }
+    @keyframes slotBlink2 {
+      0%, 100% { fill: #8B5CF6; opacity: 1; stroke: #00F0FF; filter: drop-shadow(0 0 8px #8B5CF6); }
+      50% { fill: #EF4444; opacity: 0.5; }
+    }
+    @keyframes radarLineSweep {
+      0% { transform: translateY(-10px); opacity: 0; }
+      50% { opacity: 0.9; }
+      100% { transform: translateY(80px); opacity: 0; }
+    }
+
+    .proj-title { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 900; fill: #C084FC; font-size: 16px; letter-spacing: 1px; }
+    .subtitle { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 600; fill: #E2E8F0; font-size: 13px; }
+    .bullet-text { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12px; fill: #94A3B8; line-height: 1.5; }
+    .tech-pill { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11px; font-weight: 600; fill: #E9D5FF; }
+    .status-badge { font-family: 'Courier New', monospace; font-size: 11px; font-weight: 700; fill: #C084FC; }
+
+    .s1 { animation: slotBlink1 2s infinite ease-in-out; }
+    .s2 { animation: slotBlink2 2.8s infinite ease-in-out 0.8s; }
+    .sweep { animation: radarLineSweep 3s linear infinite; }
+  </style>
+
+  <!-- 3D Card Base Background -->
+  <rect width="842" height="232" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5" />
+  <rect width="842" height="232" rx="14" fill="none" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.35" filter="url(#ultraGlow)" />
+  
+  <!-- Left Glowing Accent Bar -->
+  <rect x="0" y="0" width="5" height="232" rx="2" fill="url(#violetGrad)" filter="url(#ultraGlow)" />
+
+  <!-- 3D ISOMETRIC PARKING LOT & RADAR SCANNER (RIGHT BACKGROUND) -->
+  <g transform="translate(630, 60) skewX(-25) rotate(15)" opacity="0.65">
+    <polygon points="0,0 170,0 130,95 -40,95" fill="#0B1224" stroke="#8B5CF6" stroke-width="1.5" />
+    <line x1="-30" y1="0" x2="160" y2="0" stroke="#00F0FF" stroke-width="2" class="sweep" filter="url(#ultraGlow)" />
+
+    <rect x="10" y="10" width="30" height="22" rx="3" fill="#22C55E" opacity="0.85" />
+    <rect x="48" y="10" width="30" height="22" rx="3" stroke="#8B5CF6" stroke-width="1" class="s2" />
+    <rect x="86" y="10" width="30" height="22" rx="3" fill="#00F0FF" class="s1" />
+    
+    <rect x="10" y="48" width="30" height="22" rx="3" fill="#EF4444" opacity="0.85" />
+    <rect x="48" y="48" width="30" height="22" rx="3" fill="#22C55E" opacity="0.85" />
+    <rect x="86" y="48" width="30" height="22" rx="3" fill="#8B5CF6" class="s1" style="animation-delay: 1s;" />
+  </g>
+
+  <g transform="translate(30, 22)">
+    <!-- Top Header -->
+    <g transform="translate(0, 0)">
+      <circle cx="6" cy="6" r="4.5" fill="#8B5CF6" class="s1" filter="url(#ultraGlow)" />
+      <text x="20" y="10" class="proj-title">Smart Parking Slot Finder</text>
+      <text x="240" y="10" class="subtitle">— Full-Stack Web Parking Application</text>
+
+      <!-- Badge Tag -->
+      <rect x="575" y="-5" width="215" height="26" rx="13" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="1" />
+      <text x="587" y="12" class="status-badge">FLASK // SQLITE // AUTH &amp; ADMIN</text>
+    </g>
+
+    <!-- Glowing Separator -->
+    <line x1="0" y1="24" x2="790" y2="24" stroke="#1E293B" stroke-width="1" />
+    <line x1="0" y1="24" x2="280" y2="24" stroke="url(#violetGrad)" stroke-width="2.5" filter="url(#ultraGlow)" />
+
+    <!-- Project Description Bullets matching new 2-page resume -->
+    <text x="0" y="52" class="bullet-text">
+      • Developed a full-stack Smart Parking Slot Finder application using Flask and SQLite, enabling real-time parking slot
+    </text>
+    <text x="12" y="70" class="bullet-text">
+      availability, secure user authentication, and online slot booking.
+    </text>
+
+    <text x="0" y="94" class="bullet-text">
+      • Implemented parking reservation, booking history, payment management, and a role-based admin dashboard to efficiently manage
+    </text>
+    <text x="12" y="112" class="bullet-text">
+      parking slots, users, and booking operations.
+    </text>
+
+    <text x="0" y="136" class="bullet-text">
+      • Designed a responsive UI with HTML, CSS, and JavaScript, integrating efficient database operations and request handling.
+    </text>
+
+    <!-- Technologies Row -->
+    <g transform="translate(0, 162)">
+      <text x="0" y="15" font-family="monospace" font-size="11" fill="#64748B">TECHNOLOGIES:</text>
+      
+      <g transform="translate(100, 0)">
+        <rect x="0" y="0" width="55" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="8" y="15" class="tech-pill">Flask</text>
+
+        <rect x="63" y="0" width="60" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="71" y="15" class="tech-pill">SQLite</text>
+
+        <rect x="131" y="0" width="50" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="139" y="15" class="tech-pill">HTML</text>
+
+        <rect x="189" y="0" width="45" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="197" y="15" class="tech-pill">CSS</text>
+
+        <rect x="242" y="0" width="80" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="250" y="15" class="tech-pill">JavaScript</text>
+
+        <rect x="330" y="0" width="60" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.6" />
+        <text x="338" y="15" class="tech-pill">Python</text>
+      </g>
+    </g>
+  </g>
+</svg>
