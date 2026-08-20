@@ -51,12 +51,12 @@
 
 <br />
 
-<!-- 🪐 PROJECTS: PROJECT GRAVITY SYSTEM -->
+<!-- <!-- 🪐 PROJECTS: PROJECT GRAVITY SYSTEM -->
 <div align="center">
   <img src="./assets/projects_gravity_system.svg" alt="🪐 Project Gravity System — AI Core & Orbiting Projects" width="100%" />
 </div>
 
-<br />
+<br /> -->
 
 <!-- FEATURED AI & FULLSTACK PROJECTS DETAILED HUD MODULES -->
 <div align="center">
