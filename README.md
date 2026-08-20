@@ -44,23 +44,18 @@
 
 <br />
 
-<!-- RESEARCH & ENGINEERING EXPERIMENTS (INTERNSHIPS) -->
+<!-- RESEARCH & INTERNSHIPS -->
 <div align="center">
   <img src="./assets/experience_timeline.svg" alt="Research & Engineering Timeline" width="100%" />
 </div>
 
 <br />
 
-<!-- <!-- 🪐 PROJECTS: PROJECT GRAVITY SYSTEM -->
-<div align="center">
-  <img src="./assets/projects_gravity_system.svg" alt="🪐 Project Gravity System — AI Core & Orbiting Projects" width="100%" />
-</div>
 
-<br /> -->
 
 <!-- FEATURED AI & FULLSTACK PROJECTS DETAILED HUD MODULES -->
 <div align="center">
-  <h2><code>// FEATURED RESEARCH &amp; ENGINEERING PROJECT MODULES</code></h2>
+  <h2><code>// ENGINEERING PROJECT MODULES</code></h2>
   
   <br />
 
