@@ -69,9 +69,6 @@
     <img src="./assets/project_smart_parking.svg" alt="Smart Parking Slot Finder" width="100%" />
   </a>
 
-  <br /><br />
-
-  <img src="./assets/project_agrisahayak.svg" alt="AgriSahayak — AI Multilingual 6-Language Telegram Farming Assistant" width="100%" />
 </div>
 
 <br />
@@ -97,7 +94,6 @@
 
 ---
 
-### 📄 Comprehensive Resume Content Summary
 
 #### 👤 Contact & Location Information
 - **Name:** Thugu Ganesh Kumar Reddy
