@@ -1,115 +1,146 @@
-<!-- AI DEVELOPER COMMAND CENTER -->
+<div align="center">
+  <img src="./assets/hero.svg" width="100%" alt="AI & Front-End Interaction Visualization">
+</div>
 
 <div align="center">
-  <img src="./assets/hero-ai.svg" width="100%" alt="AI Developer Interface Hero">
+  <h1>THUGU GANESH KUMAR REDDY</h1>
+  <h3>AI & FRONT-END DEVELOPER</h3>
+  <p>Artificial Intelligence • Machine Learning • Computer Vision • Front-End Development</p>
+  
+  <p>
+    <a href="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=16&pause=1000&color=00F0FF&center=true&vCenter=true&width=435&lines=Building+AI-Powered+Applications;Creating+Interactive+Web+Experiences;Exploring+Computer+Vision;Building+Intelligent+User+Interfaces;Learning+•+Building+•+Improving">
+      <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=16&pause=1000&color=00F0FF&center=true&vCenter=true&width=435&lines=Building+AI-Powered+Applications;Creating+Interactive+Web+Experiences;Exploring+Computer+Vision;Building+Intelligent+User+Interfaces;Learning+•+Building+•+Improving" alt="Typing SVG" />
+    </a>
+  </p>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="./assets/boot-system.svg" width="100%" alt="System Boot Sequence">
+  <a href="#about"><code>ABOUT</code></a> &nbsp;
+  <a href="#skills"><code>SKILLS</code></a> &nbsp;
+  <a href="#experience"><code>EXPERIENCE</code></a> &nbsp;
+  <a href="#projects"><code>PROJECTS</code></a> &nbsp;
+  <a href="#research"><code>RESEARCH</code></a> &nbsp;
+  <a href="#education"><code>EDUCATION</code></a> &nbsp;
+  <a href="#connect"><code>CONNECT</code></a>
 </div>
+
+<hr/>
+
+<h2 id="about">ABOUT</h2>
+
+I am a B.Tech CSE(AI) student working on Artificial Intelligence, Machine Learning, and Computer Vision. I build front-end applications and interactive web experiences, bridging the gap between intelligent data models and practical user interfaces. I am continuously learning, building projects, and transforming AI capabilities into accessible web experiences.
 
 <br/>
 
 <div align="center">
-  <a href="#about-system-identity"><code>[ ABOUT ]</code></a>
-  <a href="#skills-svg-technology-matrix"><code>[ SKILLS ]</code></a>
-  <a href="#experience"><code>[ EXPERIENCE ]</code></a>
-  <a href="#project-command-center"><code>[ PROJECTS ]</code></a>
-  <a href="#research--exploration"><code>[ RESEARCH ]</code></a>
-  <a href="#github-analytics-command-center"><code>[ ANALYTICS ]</code></a>
-  <a href="#education"><code>[ EDUCATION ]</code></a>
-  <a href="#connect"><code>[ CONNECT ]</code></a>
+  <img src="./assets/ai-interface.svg" width="100%" alt="AI to Front-End Architecture">
 </div>
 
 <hr/>
 
-## ABOUT: SYSTEM IDENTITY
-
-**AI & Front-End Developer**
+<h2 id="skills">SKILLS</h2>
 
 <div align="center">
-  <img src="./assets/terminal.svg" width="100%" alt="Terminal Interface">
-</div>
-
-I work at the intersection of complex data modeling and accessible user interfaces. The true value of AI is unlocked when it is seamlessly accessible to the user.
-
-### ⚡ Intelligence Meets Interface
-
-<div align="center">
-  <img src="./assets/intelligence-interface.svg" width="100%" alt="Intelligence Meets Interface Pipeline">
-</div>
-
-<hr/>
-
-## SKILLS: SVG TECHNOLOGY MATRIX
-
-### AI SKILL MAP
-
-<div align="center">
-  <img src="./assets/neural-skill-map.svg" width="100%" alt="Neural Skill Map">
+  <img src="./assets/skills.svg" width="100%" alt="Skills Network">
 </div>
 
 <details>
-<summary><code>View Full Technology Arsenal</code></summary>
+<summary><code>View All Technical Skills</code></summary>
 <br/>
 
-* **AI / ML**: Machine Learning • Deep Learning • Computer Vision • NLP • OCR • Explainable AI
-* **Programming**: Python • Java • C • SQL • JavaScript
-* **Front-End**: React.js • HTML • CSS • JavaScript
-* **AI / Data Libraries**: TensorFlow • Keras • Scikit-learn • Pandas • NumPy • OpenCV
-* **Backend / Supporting**: Flask • FastAPI • Django • Node.js
-* **Databases**: MySQL • MongoDB • SQLite
-* **Tools**: Git • GitHub • VS Code • Google Colab • MySQL Workbench
+* **AI / Machine Learning:** Machine Learning, Deep Learning, Computer Vision, NLP, OCR, Explainable AI
+* **Programming:** Python, Java, C, SQL, JavaScript
+* **Front-End:** React.js, HTML, CSS, JavaScript
+* **Libraries / Frameworks:** TensorFlow, Keras, Scikit-learn, Pandas, NumPy, OpenCV, Flask, FastAPI, Django, Node.js
+* **Databases:** MySQL, MongoDB, SQLite
+* **Tools:** Git, GitHub, VS Code, Google Colab, MySQL Workbench
 </details>
 
+<hr/>
+
+<h2 id="experience">EXPERIENCE</h2>
+
+**AI Research Intern — Vision Technology Lab, IIT Tirupati**  
+*May 2026 – July 2026*  
+**Project:** ShreeAkshara-OCR — Indic Script Style Adaptation and Augmentation
+
+**Contributions:**
+* Synthetic dataset generation
+* Style generation
+* Document augmentation
+* Document degradation
+* Image processing
+* OCR dataset preparation
+* Computer vision research support
+
 <br/>
 
-### FRONT-END INTERFACE LAB
-
 <div align="center">
-  <img src="./assets/frontend-interface.svg" width="100%" alt="Front-End Lab">
+  <img src="./assets/experience.svg" width="100%" alt="Experience Timeline">
 </div>
 
 <hr/>
 
-## EXPERIENCE
-
-<div align="center">
-  <img src="./assets/experience-timeline.svg" width="100%" alt="Experience Timeline">
-</div>
-
-<hr/>
-
-## PROJECT COMMAND CENTER
+<h2 id="projects">PROJECTS</h2>
 
 <table width="100%">
   <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/ganeshkumar0910/Multi-Horizon-Power-Consumption-Forecasting-using-Deep-Learning">
-        <img src="./assets/project-power.svg" width="100%" alt="Power Consumption Forecasting">
-      </a>
+    <td width="50%" valign="top">
+      <h3>01 — MULTI-HORIZON POWER CONSUMPTION FORECASTING</h3>
+      <img src="./assets/power.svg" width="100%" alt="Power Forecasting Visualization">
+      <p><i>Python • TensorFlow/Keras • LSTM • Streamlit • Pandas • NumPy • Scikit-learn</i></p>
+      <details>
+        <summary>View details</summary>
+        <p>Forecasts Next Hour, Day, Week, and Month for PJM Hourly Energy Consumption dataset utilizing preprocessing, feature engineering, sequence generation, normalization, LSTM forecasting, evaluation (MAE, RMSE, MSE, R²), and visualization.</p>
+      </details>
+      <br/>
+      <a href="https://github.com/ganeshkumar0910/Multi-Horizon-Power-Consumption-Forecasting-using-Deep-Learning"><code>[ VIEW CODE ]</code></a>
     </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/ganeshkumar0910/Smart-Parking-Slot-Finder">
-        <img src="./assets/project-parking.svg" width="100%" alt="Smart Parking Slot Finder">
-      </a>
+    <td width="50%" valign="top">
+      <h3>02 — SMART PARKING SLOT FINDER</h3>
+      <img src="./assets/parking.svg" width="100%" alt="Parking Slot Visualization">
+      <p><i>Python • Flask • SQLite • HTML • CSS • JavaScript</i></p>
+      <details>
+        <summary>View details</summary>
+        <p>Parking discovery, slot reservation, authentication, booking history, payment management, admin dashboard, and parking slot management.</p>
+      </details>
+      <br/>
+      <a href="https://github.com/ganeshkumar0910/Smart-Parking-Slot-Finder"><code>[ VIEW CODE ]</code></a>
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center">
-      <img src="./assets/project-ocr.svg" width="100%" alt="ShreeAkshara-OCR">
+    <td width="50%" valign="top">
+      <h3>03 — SHREEAKSHARA-OCR</h3>
+      <img src="./assets/ocr.svg" width="100%" alt="OCR Data Flow">
+      <p><i>Python • OpenCV • Diffusion Models • DocCreator • Computer Vision</i></p>
+      <details>
+        <summary>View details</summary>
+        <p>Focused on Devanagari and Sharada Indic scripts via synthetic data generation, style adaptation, document degradation, and OCR dataset augmentation.</p>
+      </details>
     </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/ganeshkumar0910/AgriSahayak">
-        <img src="./assets/project-agri.svg" width="100%" alt="AgriSahayak">
-      </a>
+    <td width="50%" valign="top">
+      <h3>04 — AGRISAHAYAK</h3>
+      <img src="./assets/agri.svg" width="100%" alt="AgriSahayak Bot Flow">
+      <p><i>Node.js • JavaScript • Telegram Bot API • Groq API • OpenWeather API</i></p>
+      <details>
+        <summary>View details</summary>
+        <p>AI-powered multilingual Telegram farming assistant supporting English, Telugu, Hindi, Tamil, Kannada, and Malayalam. Provides crop guidance, fertilizer guidance, pest guidance, and GPS-based weather information.</p>
+      </details>
+      <br/>
+      <a href="https://github.com/ganeshkumar0910/AgriSahayak"><code>[ VIEW CODE ]</code></a>
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center">
-      <img src="./assets/project-fraud.svg" width="100%" alt="Fraud Detection System">
+    <td width="50%" valign="top">
+      <h3>05 — FRAUD DETECTION SYSTEM</h3>
+      <img src="./assets/fraud.svg" width="100%" alt="Fraud Detection Flow">
+      <p><i>Python • Machine Learning • Scikit-learn • XGBoost • SMOTE</i></p>
+      <details>
+        <summary>View details</summary>
+        <p>Evaluates risk classification models including Logistic Regression, Random Forest, XGBoost, SVM, KNN, and Soft Voting Ensemble with metrics like Precision, Recall, F1-score, ROC-AUC, and Confusion Matrix.</p>
+      </details>
     </td>
     <td width="50%"></td>
   </tr>
@@ -117,53 +148,44 @@ I work at the intersection of complex data modeling and accessible user interfac
 
 <hr/>
 
-## RESEARCH & EXPLORATION
+<h2 id="research">RESEARCH INTERESTS</h2>
 
-**Current Exploration Areas:**
-`[ RAG ]` `[ COMPUTER VISION ]` `[ REINFORCEMENT LEARNING ]` `[ DQN ]` `[ INFORMATION RETRIEVAL ]` `[ MULTIMODAL AI ]`
+* Retrieval-Augmented Generation
+* Computer Vision
+* Reinforcement Learning
+* Deep Q-Networks
+* Information Retrieval
+* Multimodal AI
+* Document Intelligence
 
-### Current Research Direction: FORENSIC EVIDENCE RETRIEVAL
+### Current Research Direction: Forensic Evidence Retrieval
 
 <div align="center">
-  <img src="./assets/research-rag.svg" width="100%" alt="Forensic Evidence Retrieval Flow">
+  <img src="./assets/research.svg" width="100%" alt="Forensic Evidence Retrieval Process">
 </div>
+<br/>
+<i>Note: This is a current research interest/exploration.</i>
 
 <hr/>
 
-## GITHUB ANALYTICS COMMAND CENTER
+## GITHUB ANALYTICS
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ganeshkumar0910&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00F0FF&icon_color=00F0FF" alt="GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ganeshkumar0910&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00F0FF" alt="Top Languages" />
 </div>
 
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ganeshkumar0910&theme=radical&hide_border=true&background=0D1117&fire=00F0FF&ring=00F0FF" alt="GitHub Streak" />
-</div>
-
 <hr/>
 
-## EDUCATION
+<h2 id="education">EDUCATION</h2>
 
 **Madanapalle Institute of Technology & Science**  
-B.Tech — Computer Science & Engineering (Artificial Intelligence)  
+B.Tech — Computer Science and Engineering (Artificial Intelligence)  
 *2023–2027*
 
 <hr/>
 
-## BUILD &rarr; TEST &rarr; IMPROVE
-
-<div align="center">
-  <img src="./assets/philosophy.svg" width="100%" alt="Developer Philosophy">
-</div>
-
-<hr/>
-
-## CONNECT
-
-Interested in AI, front-end development, intelligent applications, or collaborative projects?
+<h2 id="connect">CONNECT</h2>
 
 <div align="center">
   <a href="https://github.com/ganeshkumar0910"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>

@@ -1,0 +1,59 @@
+<svg width="800" height="350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Skills Architecture">
+    <rect width="100%" height="100%" fill="#0D1117" rx="5"/>
+    <g transform="translate(400, 30)">
+        
+        <!-- Left Side: AI -->
+        <circle cx="-200" cy="20" r="30" fill="#161b22" stroke="#B900FF" stroke-width="2"/>
+        <text x="-200" y="25" font-family="Arial" font-size="14" font-weight="bold" fill="#B900FF" text-anchor="middle">AI</text>
+        
+        <g stroke="#30363d" stroke-width="1.5">
+            <line x1="-200" y1="50" x2="-200" y2="130"/>
+            <line x1="-200" y1="70" x2="-100" y2="70"/>
+            <line x1="-200" y1="90" x2="-100" y2="90"/>
+            <line x1="-200" y1="110" x2="-100" y2="110"/>
+            <line x1="-200" y1="130" x2="-100" y2="130"/>
+            <!-- To application -->
+            <path d="M -200 130 Q -200 200 -70 200" fill="none"/>
+        </g>
+        
+        <g font-family="Arial" font-size="11" fill="#c9d1d9">
+            <text x="-90" y="74">Machine Learning</text>
+            <text x="-90" y="94">Deep Learning</text>
+            <text x="-90" y="114">Computer Vision</text>
+            <text x="-90" y="134">NLP &amp; OCR</text>
+        </g>
+        
+        <!-- Right Side: Front-End -->
+        <circle cx="200" cy="20" r="30" fill="#161b22" stroke="#00F0FF" stroke-width="2"/>
+        <text x="200" y="25" font-family="Arial" font-size="12" font-weight="bold" fill="#00F0FF" text-anchor="middle">FRONT-END</text>
+        
+        <g stroke="#30363d" stroke-width="1.5">
+            <line x1="200" y1="50" x2="200" y2="130"/>
+            <line x1="200" y1="70" x2="100" y2="70"/>
+            <line x1="200" y1="90" x2="100" y2="90"/>
+            <line x1="200" y1="110" x2="100" y2="110"/>
+            <line x1="200" y1="130" x2="100" y2="130"/>
+            <!-- To application -->
+            <path d="M 200 130 Q 200 200 70 200" fill="none"/>
+        </g>
+
+        <g font-family="Arial" font-size="11" fill="#c9d1d9" text-anchor="end">
+            <text x="90" y="74">React.js</text>
+            <text x="90" y="94">JavaScript</text>
+            <text x="90" y="114">HTML</text>
+            <text x="90" y="134">CSS</text>
+        </g>
+        
+        <!-- Center: Application -->
+        <rect x="-70" y="180" width="140" height="40" fill="#161b22" stroke="#8b949e" stroke-width="2" rx="5"/>
+        <text x="0" y="205" font-family="Arial" font-size="12" font-weight="bold" fill="#c9d1d9" text-anchor="middle">APPLICATION</text>
+        
+        <!-- Particles -->
+        <circle r="3" fill="#B900FF">
+            <animateMotion path="M -200 130 Q -200 200 -70 200" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="3" fill="#00F0FF">
+            <animateMotion path="M 200 130 Q 200 200 70 200" dur="2s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg>

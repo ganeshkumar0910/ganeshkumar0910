@@ -1,0 +1,26 @@
+<svg width="800" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Research Flow">
+    <rect width="100%" height="100%" fill="#0D1117" rx="5"/>
+    <g transform="translate(40, 80)" font-family="Courier New, monospace" font-size="10" font-weight="bold" fill="#c9d1d9">
+        <text x="0" y="0">FORENSIC EVIDENCE</text>
+        <line x1="110" y1="-3" x2="140" y2="-3" stroke="#30363d" stroke-width="1.5"/>
+        
+        <text x="150" y="0">COMPUTER VISION</text>
+        <line x1="250" y1="-3" x2="280" y2="-3" stroke="#30363d" stroke-width="1.5"/>
+
+        <text x="290" y="0">FEATURE EXTRACTION</text>
+        <line x1="410" y1="-3" x2="440" y2="-3" stroke="#30363d" stroke-width="1.5"/>
+
+        <text x="450" y="0">INFORMATION RETRIEVAL</text>
+        <line x1="585" y1="-3" x2="615" y2="-3" stroke="#30363d" stroke-width="1.5"/>
+
+        <text x="625" y="0">RANKING</text>
+        <line x1="675" y1="-3" x2="705" y2="-3" stroke="#30363d" stroke-width="1.5"/>
+
+        <text x="715" y="0" fill="#00F0FF">FEEDBACK</text>
+
+        <!-- Single travelling particle -->
+        <circle r="3" fill="#00F0FF">
+            <animateMotion path="M 110 -3 L 140 -3 M 250 -3 L 280 -3 M 410 -3 L 440 -3 M 585 -3 L 615 -3 M 675 -3 L 705 -3" dur="5s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg>

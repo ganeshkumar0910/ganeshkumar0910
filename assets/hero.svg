@@ -1,0 +1,46 @@
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI and Front-End Interaction">
+    <rect width="100%" height="100%" fill="#0D1117" rx="10"/>
+    <g transform="translate(400, 50)" stroke="#30363d" stroke-width="1.5">
+        <!-- Connecting lines -->
+        <line x1="0" y1="-20" x2="-40" y2="20"/>
+        <line x1="0" y1="-20" x2="40" y2="20"/>
+        <line x1="-40" y1="20" x2="-20" y2="60"/>
+        <line x1="40" y1="20" x2="20" y2="60"/>
+        <line x1="-20" y1="60" x2="20" y2="60"/>
+        
+        <line x1="0" y1="60" x2="0" y2="200" stroke="#00F0FF" stroke-dasharray="4 4" opacity="0.6"/>
+        
+        <!-- Nodes -->
+        <circle cx="0" cy="-20" r="4" fill="#B900FF"/>
+        <circle cx="-40" cy="20" r="4" fill="#B900FF"/>
+        <circle cx="40" cy="20" r="4" fill="#B900FF"/>
+        <circle cx="-20" cy="60" r="4" fill="#B900FF"/>
+        <circle cx="20" cy="60" r="4" fill="#B900FF"/>
+        
+        <!-- Central AI Node -->
+        <circle cx="0" cy="60" r="10" fill="#0D1117" stroke="#00F0FF" stroke-width="2"/>
+        <text x="0" y="64" font-family="Arial, sans-serif" font-size="10" fill="#00F0FF" text-anchor="middle" font-weight="bold">AI</text>
+        
+        <circle cx="0" cy="60" r="14" fill="none" stroke="#00F0FF" opacity="0.5">
+            <animate attributeName="r" values="14; 24; 14" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.5; 0; 0.5" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        
+        <!-- Vertical flow text -->
+        <g font-family="Arial, sans-serif" font-size="12" fill="#c9d1d9" text-anchor="middle" font-weight="bold">
+            <rect x="-60" y="105" width="120" height="20" fill="#161b22" stroke="#30363d" rx="4"/>
+            <text x="0" y="120">APPLICATION</text>
+            
+            <rect x="-60" y="150" width="120" height="20" fill="#161b22" stroke="#30363d" rx="4"/>
+            <text x="0" y="165">FRONT-END</text>
+            
+            <rect x="-60" y="195" width="120" height="20" fill="#161b22" stroke="#00F0FF" rx="4"/>
+            <text x="0" y="210" fill="#00F0FF">INTERFACE</text>
+        </g>
+        
+        <!-- Particles -->
+        <circle r="3" fill="#ffffff">
+            <animateMotion path="M 0 60 L 0 200" dur="2s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg>
