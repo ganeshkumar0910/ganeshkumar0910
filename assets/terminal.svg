@@ -1,0 +1,23 @@
+<svg width="800" height="220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terminal Interface">
+    <rect width="100%" height="100%" fill="#0D1117" rx="5" stroke="#30363d" stroke-width="1"/>
+    <rect x="0" y="0" width="800" height="25" fill="#161b22" rx="5"/>
+    <circle cx="15" cy="12.5" r="5" fill="#ff5f56"/>
+    <circle cx="35" cy="12.5" r="5" fill="#ffbd2e"/>
+    <circle cx="55" cy="12.5" r="5" fill="#27c93f"/>
+    <text x="80" y="17" font-family="Courier New, monospace" font-size="12" fill="#c9d1d9">ganesh@ai-lab:~</text>
+    
+    <g font-family="Courier New, monospace" font-size="14" fill="#c9d1d9">
+        <text x="20" y="55" fill="#00F0FF">$ whoami</text>
+        <text x="20" y="75">thugu-ganesh-kumar-reddy</text>
+        
+        <text x="20" y="110" fill="#00F0FF">$ role</text>
+        <text x="20" y="130">AI &amp; Front-End Developer</text>
+        
+        <text x="20" y="165" fill="#00F0FF">$ focus</text>
+        <text x="20" y="185">Artificial Intelligence • ML/CV • Interactive UI</text>
+        
+        <text x="20" y="210" fill="#00F0FF">$ <tspan fill="#ffffff">_</tspan>
+            <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        </text>
+    </g>
+</svg>
